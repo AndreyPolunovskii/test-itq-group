@@ -70,7 +70,7 @@ def get_and_put_data_weather(args):
               if 'error' in r.json():
                 return r.json()
               else:
-                write_data_weather(r.json())
+                write_data_weather(r.json()) # здесь записываем данные
                 return {"done":"данные загружены"}
           else:
                 return {"error":"не удалось подключиться к удаленному ресурсу"}
