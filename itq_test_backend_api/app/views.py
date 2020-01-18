@@ -21,12 +21,14 @@ def get_params_exist():
 ########получение и запись данных в базу#############
 #################не более 500 запросов в день??######
 @app.route('/RR/api/v1.0/data/upload', methods=['GET'])
-def upload_data(args):
+def upload_data():
     @get_params_exist()
     def source_funct(args):
-        response = get_and_put_data_weather(args)
-#       response = get_data_weather({"city":args['city'],"start_date":args['start_date'],"end_date":args['end_date']})
-        return jsonify(response)
+        res = get_and_put_data_weather(args)
+        if 'done' in res:
+            res = read_data_weather(args)
+            return jsonify({"data":res})
+        return jsonify(res)
     return source_funct
 
 

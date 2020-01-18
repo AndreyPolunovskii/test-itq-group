@@ -75,4 +75,4 @@ def get_and_put_data_weather(args):
           else:
                 return {"error":"не удалось подключиться к удаленному ресурсу"}
     else:
-          return {"error":"запрашиваемая инофрмация не была найдена"}
+          return {"error":"запрашиваемая информация не была найдена"}
