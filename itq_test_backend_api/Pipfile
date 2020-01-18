@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+flask="*"
+jsonify="*"
+flask-sqlalchemy="*"
+sqlalchemy-migrate="*"
+psycopg2-binary="*"
+Flask-Migrate="*"
+Flask-Mail="*"
+Flask-Script="*"
+Flask-Login="*"
+flask_cors="*"
+requests="*"
+
+[requires]
+# our Dockerfile is based on Python 3.7
+python_version = "3.7"

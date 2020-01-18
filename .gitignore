@@ -1,0 +1,5 @@
+/itq_test_backend_api/__pycache__/*
+/itq_test_backend_api/little_env/*
+/itq_test_backend_api/app/__pycache__/*
+/itq_test_backend_api/migrations/*
+/documentation/.~*

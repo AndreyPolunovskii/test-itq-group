@@ -1,0 +1,36 @@
+version: '3.1'
+
+services:
+
+  #back - server
+  itq_test_backend_api:
+    image: andreyp2009/itq_test_backend_api:latest
+    container_name: itq_test_backend_api
+    networks:
+      - db_network
+    depends_on:
+      - db
+
+  #front - server
+  itq_test_front:
+    image: andreyp2009/itq_test_front:latest
+    container_name: itq_test_front
+
+
+
+  db:  # <-- IMPORTANT: same name as in DATABASES setting, otherwise Flask won't find the database!
+    image: postgres:10
+    container_name: postgres
+    networks:
+      - db_network
+    volumes:
+      - ./config/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_vol:/var/lib/postgresql/data
+
+#наша сеть между контейнерами
+networks:
+  db_network:
+    driver: bridge
+
+volumes:
+  postgres_vol:
