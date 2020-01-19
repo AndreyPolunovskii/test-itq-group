@@ -1,0 +1,9 @@
+{
+  "djangoapi" : {
+    "root" : ""
+  },
+  "urls" :{
+   "main" : "/main"
+ },
+  "test" : false
+}

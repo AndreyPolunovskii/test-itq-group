@@ -3,3 +3,5 @@
 /itq_test_backend_api/app/__pycache__/*
 /itq_test_backend_api/migrations/*
 /documentation/.~*
+
+/itq_test_front_api/node_modules/*

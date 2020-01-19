@@ -1,0 +1,10 @@
+/build.sh
+/README.md
+/node_modules/*
+/src/images/*
+/.gitignore
+/public/*
+/src/*
+!/src/fconfig.json
+/package.json
+/package-lock.json

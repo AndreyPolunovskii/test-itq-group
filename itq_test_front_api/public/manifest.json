@@ -1,0 +1,14 @@
+{
+  "short_name": "React App ROIS",
+  "name": "React App ROIS",
+  "icons": [
+    {
+      "src": "rois.gif",
+      "type": "image/gif"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
