@@ -6,16 +6,13 @@ import './App.css';
 
 import fconfig from "./fconfig.json";
 //import Error from "./components/elements/Error";
-
-
-var url_root = JSON.stringify(fconfig["urls"]["main"]).replace(/['"]+/g, '')
-
+import DrawGraphs from "./components/Draw_graphs";
 
 
 const App = () => {
   return (
       <div>
-        Hi
+        <DrawGraphs/>
       </div>
   )
 }

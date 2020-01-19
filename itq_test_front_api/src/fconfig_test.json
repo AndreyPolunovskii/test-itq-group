@@ -1,9 +1,6 @@
 {
-  "djangoapi" : {
-    "root" : "http://localhost:8000"
+  "api" : {
+    "root" : "http://localhost:5000"
   },
-  "urls" :{
-   "main" : "/main"
- },
   "test" : true
 }

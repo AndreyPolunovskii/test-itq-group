@@ -1,9 +1,6 @@
 {
-  "djangoapi" : {
+  "api" : {
     "root" : ""
   },
-  "urls" :{
-   "main" : "/main"
- },
   "test" : false
 }

@@ -1,0 +1,30 @@
+
+.page__wrapper {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  border: 1px solid rgb(164, 172, 163)grey;
+  background-color: rgba(232, 228, 196, 0.59);
+}
+
+.page__form_data_wrapper {
+  padding-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.page__graph_data_wrapper{
+  margin-top: 90px;
+  height: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page__title_wrapper {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  color: rgb(238, 95, 42);
+}

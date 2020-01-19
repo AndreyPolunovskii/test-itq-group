@@ -5,3 +5,4 @@
 /documentation/.~*
 
 /itq_test_front_api/node_modules/*
+/itq_test_front_api/src/fconfig.json
