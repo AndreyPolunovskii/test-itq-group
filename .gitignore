@@ -4,6 +4,6 @@
 /itq_test_backend_api/migrations/*
 /documentation/.~*
 
-/itq_test_front_api/node_modules/*
-/itq_test_front_api/build/*
-/itq_test_front_api/src/fconfig.json
+/itq_test_front/node_modules/*
+/itq_test_front/build/*
+/itq_test_front/src/fconfig.json
