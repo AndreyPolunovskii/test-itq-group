@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ./itq_test_front_api
+cd ./itq_test_front
 
 ./build.sh
 
