@@ -26,9 +26,9 @@ Test from itq-group
 
 1) нужно в следующих скриптах
 
-    /itq_test_backend_api/build.sh
-    /itq_test_front/build.sh
-    /docker-compose.yml
+      /itq_test_backend_api/build.sh
+      /itq_test_front/build.sh
+      /docker-compose.yml
 
 поменять название репозитория (в моем случае это andreyp2009) на ваш
 
