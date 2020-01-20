@@ -1,0 +1,6 @@
+{
+  "api" : {
+    "root" : "/api/v1.0"
+  },
+  "test" : false
+}
