@@ -36,4 +36,4 @@ Test from itq-group
 
 2)собрать весь проект командой
 
-   ./all_build.sh
+        ./all_build.sh
