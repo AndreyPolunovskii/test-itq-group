@@ -59,7 +59,7 @@ class DrawGraphs extends React.Component {
   ///////////////////////
   PutState(event) {
 
-    axios.get(base_url+'/RR/api/v1.0/data/upload',{
+    axios.get(base_url+'/api/v1.0/data/upload',{
       params: {
         city : this.state.city_name,
         start_date : this.state.start_date,
@@ -93,7 +93,7 @@ class DrawGraphs extends React.Component {
 ///////////////////////
 UpdateState(event) {
 
-  axios.get(base_url+'/RR/api/v1.0/data/get',{
+  axios.get(base_url+'/api/v1.0/data/get',{
     params: {
       city : this.state.city_name,
       start_date : this.state.start_date,

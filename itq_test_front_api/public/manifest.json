@@ -1,12 +1,6 @@
 {
-  "short_name": "React App ROIS",
-  "name": "React App ROIS",
-  "icons": [
-    {
-      "src": "rois.gif",
-      "type": "image/gif"
-    }
-  ],
+  "short_name": "React App ITQ_test",
+  "name": "React App ITQ_test",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

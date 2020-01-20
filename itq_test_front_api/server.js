@@ -25,14 +25,6 @@ app.use(minify({
 app.options('*', cors())
 app.use('/static',express.static(__dirname + "/"+type_project+"/static"));
 app.use(express.static(path.join(__dirname, type_project)));
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, type_project, 'index.html'));
-});
-
-app.get('/main', function(req, res) {
-  res.sendFile(path.join(__dirname, type_project, 'index.html'));
-});
-
 
 //////////////////////////////////
 
@@ -42,9 +34,16 @@ app.get('/manifest.json', function(req, res) {
 
 //////////////////////////////////
 //проксируем нашу api
-app.use('/api/v1.0', proxy('http://localhost:5000/'))
+app.use('/api/v1.0', proxy('http://itq_test_backend_api:5000/'))
 
 //console.log(express.static(path.join(__dirname, type_project)))
+
+//////////////////////////////////
+//для всех отсальных главная страница
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, type_project, 'index.html'));
+});
 
 
 app.listen(3000);
