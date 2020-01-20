@@ -24,7 +24,7 @@ def get_params_exist():
 #####################################################
 ########получение и запись данных в базу#############
 #################не более 500 запросов в день??######
-@app.route('/RR/api/v1.0/data/upload', methods=['GET'])
+@app.route('/data/upload', methods=['GET'])
 def upload_data():
     @get_params_exist()
     def source_funct(args):
@@ -38,7 +38,7 @@ def upload_data():
 
 ##################################################
 ###############получение данных из базы###########
-@app.route('/RR/api/v1.0/data/get', methods=['GET'])
+@app.route('/data/get', methods=['GET'])
 def get_data():
     @get_params_exist()
     def source_funct(args):

@@ -6,7 +6,7 @@ npm i
 
 npm run build
 
-sudo chmod -R 777 ./build
+chmod -R 777 ./build
 
 
 
