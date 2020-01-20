@@ -4,8 +4,8 @@ from .mixins import OutputMixin
 class Weather(OutputMixin,db.Model):
     __tablename__ = 'weather'
     id = db.Column(db.Integer, primary_key = True) # индетификатор конкретной записи
-    indentity = db.Column(db.String(30),index = True, unique = True) # уникальное значение строкиы
-    city_name = db.Column(db.String(120)) # имя города
+    indentity = db.Column(db.String(500),index = True, unique = True) # уникальное значение строкиы
+    city_name = db.Column(db.String(200)) # имя города
     city_id = db.Column(db.Integer) # id города
     country_code = db.Column(db.String(30)) #код страны
     dt = db.Column(db.DateTime) # момент времени

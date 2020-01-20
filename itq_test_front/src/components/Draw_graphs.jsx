@@ -37,6 +37,7 @@ class DrawGraphs extends React.Component {
     this.getOption = this.getOption.bind(this);
   }
   ///////////////////////
+  //функция проверки на ошибки со стороны бэка
   checkData(response) {
 
     //если какие то ошибки (надо их выводить на экран)
@@ -61,6 +62,7 @@ class DrawGraphs extends React.Component {
     }
   }
   ///////////////////////
+  //запрос в случае обращения к внешнему источнику
   PutState(event,type_data) {
 
     if (type_data === 'data1')
@@ -109,6 +111,7 @@ class DrawGraphs extends React.Component {
 }
 
 ///////////////////////
+//запрос в случае обращения в базу
 UpdateState(event,type_data) {
 
   if (type_data === 'data1')
@@ -156,7 +159,7 @@ UpdateState(event,type_data) {
 
 }
 /////////////////////////////////////
-
+//callback при нажатии на кнопку
 handleClick(event) {
   const name = event.target.name;
 
@@ -179,6 +182,7 @@ handleClick(event) {
 
 }
 //////////////////////////////////////
+//callback при изменении поля
 onChange(e) {
   const name = e.target.name;
   const value = e.target.value;
@@ -190,6 +194,8 @@ onChange(e) {
 }
 
 //////////////////////
+//метод жизненного цикла компонента
+//вызывается сразу после монтирования компонента в DOM
 componentDidMount(event) {
 
   this.UpdateState(event,'data1')
@@ -298,6 +304,7 @@ getOption(type_data) {
 
 }
 ////////////////////
+//функция отрисовки титульной надписи
 renderTitle(data) {
   if (this.state.data1 !== null && this.state.data2 !== null)
   {
@@ -312,7 +319,7 @@ renderTitle(data) {
 
 /////////////////////
 
-
+//функция рендера
 render() {
   let {style,data} = this.state;
   return (
