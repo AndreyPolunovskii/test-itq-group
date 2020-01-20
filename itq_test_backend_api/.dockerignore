@@ -1,0 +1,4 @@
+/build.sh
+/__pycache__/*
+/app/__pucache__/*
+/little_env/*
