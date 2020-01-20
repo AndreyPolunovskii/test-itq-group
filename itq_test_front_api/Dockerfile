@@ -10,6 +10,7 @@ COPY . .
 RUN npm install express
 RUN npm install cors
 RUN npm install express-minify
+RUN npm install express-http-proxy --save
 
 # expose the port 3000
 EXPOSE 3000

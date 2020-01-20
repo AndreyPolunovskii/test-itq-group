@@ -9,6 +9,7 @@
     "cors": "*",
     "express": "^4.17.1",
     "express-minify": "*",
+    "express-http-proxy": "*",
     "init": "^0.1.2",
     "jquery": "^3.4.1",
     "json-loader": "^0.5.7",

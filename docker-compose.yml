@@ -6,8 +6,11 @@ services:
   itq_test_backend_api:
     image: andreyp2009/itq_test_backend_api:latest
     container_name: itq_test_backend_api
+    volumes:
+      - ./config/flaskapi/config.py:/opt/services/itq_test_backend_api/src/config.py
     networks:
       - db_network
+      - service_network
     depends_on:
       - db
 
@@ -15,6 +18,10 @@ services:
   itq_test_front:
     image: andreyp2009/itq_test_front:latest
     container_name: itq_test_front
+    ports:
+      - "80:3000"
+    networks:
+      - service_network
 
 
 
@@ -30,6 +37,8 @@ services:
 #наша сеть между контейнерами
 networks:
   db_network:
+    driver: bridge
+  service_network:
     driver: bridge
 
 volumes:

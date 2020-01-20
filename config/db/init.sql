@@ -1,3 +1,3 @@
-CREATE USER rois_api with encrypted password 'wpjXyCUY';
-CREATE DATABASE rois_db;
-GRANT ALL PRIVILEGES ON DATABASE ROIS_db TO rois_api;
+CREATE USER itq_test with encrypted password 'hello2012';
+CREATE DATABASE itq_test_db;
+GRANT ALL PRIVILEGES ON DATABASE itq_test_db TO itq_test;

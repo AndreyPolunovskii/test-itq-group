@@ -8,8 +8,16 @@
   background-color: rgba(232, 228, 196, 0.59);
 }
 
+.page__title_form_data_wrapper {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+  color: rgb(238, 95, 42);
+
+}
+
 .page__form_data_wrapper {
-  padding-top: 50px;
+  padding-top: 20px;
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -21,10 +29,16 @@
   margin-right: 20px;
 }
 
+.page__main_title_wrapper {
+  padding-left:  500px;
+  padding-right: 500px;
+  font-size: 35px !important;
+}
+
 .page__title_wrapper {
   padding-top: 50px;
   text-align: center;
-  font-size: 40px;
+  font-size: 27px;
   font-family: 'Playfair Display', serif;
   color: rgb(238, 95, 42);
 }

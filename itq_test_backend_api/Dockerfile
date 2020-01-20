@@ -6,9 +6,6 @@ RUN mkdir -p /opt/services/itq_test_backend_api/src
 
 WORKDIR /opt/services/itq_test_backend_api/src
 
-#создаем папку для медиа файлов
-RUN mkdir -p /opt/services/itq_test_backend_api/src/media/
-
 # install our dependencies
 # we use --system flag because we don't need an extra virtualenv
 COPY Pipfile Pipfile.lock /opt/services/itq_test_backend_api/src/
@@ -18,7 +15,7 @@ RUN pip install pipenv && pipenv install --system
 COPY . /opt/services/itq_test_backend_api/src
 
 # expose the port 8000
-EXPOSE 8000
+EXPOSE 5000
 
 # define the default command to run when starting the container
-CMD ["gunicorn", "--bind", ":8000", "app.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "run:app"]

@@ -1,10 +1,9 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import logo from './logo.svg';
 import './App.css';
 
-import fconfig from "./fconfig.json";
+
 //import Error from "./components/elements/Error";
 import DrawGraphs from "./components/Draw_graphs";
 

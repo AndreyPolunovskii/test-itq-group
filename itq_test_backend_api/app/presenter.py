@@ -2,6 +2,7 @@ import requests
 from .models import Weather
 import datetime
 from app import db
+import config
 
 ######адаптер для записи из json (от api) в обьект базы базу####
 def adapter_dw(dataset,row_id):
@@ -56,7 +57,7 @@ def read_data_weather(args):
 #######источник https://www.weatherbit.io/ #########
 def get_and_put_data_weather(args):
     WEATHERBIT_ROOT = "https://api.weatherbit.io"
-    TOKEN = "680133cf1ae741b6b8dffc50eb55ec5f"
+    TOKEN = config.TOKEN_WEATHERBIT
     URL = WEATHERBIT_ROOT + '/v2.0/history/hourly'
     params = {"key" : TOKEN, "tz" : "local" }
     params.update(args)

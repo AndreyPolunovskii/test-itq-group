@@ -19,7 +19,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 
-# import views
+
 from . import views
 # from . import forum_views
 # from . import admin_views

@@ -1,5 +1,5 @@
 from app import db
-from app.mixins import OutputMixin
+from .mixins import OutputMixin
 
 class Weather(OutputMixin,db.Model):
     __tablename__ = 'weather'
